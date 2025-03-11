@@ -10,7 +10,7 @@ function NavigationBar() {
   return (
     <nav className="p-6 md:bg-transparent z-50  md:absolute w-full">
       <div className="mx-auto flex justify-between items-center">
-        <Logo />
+        <Logo handleClick={handleClick}/>
         <button
           className="md:hidden bg-pink-500 px-4 py-3"
           onClick={() => setIsOpen((isOpen) => !isOpen)}

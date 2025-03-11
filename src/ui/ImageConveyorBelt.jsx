@@ -29,7 +29,7 @@ export default function ImageConveyorBelt({images}) {
     <div className="relative overflow-hidden">
       {/* Image container */}
       <div
-        className="flex gap-3 transition-transform duration-500 -translate-x-[100%]"
+        className="flex gap-3 transition-transform duration-500"
         // style={{ transform: `translateX(-${currentIndex  * (100 / 3)}%)` }}
       >
         {images.concat(images).map((src, index) => ( // Duplicate images for infinite effect

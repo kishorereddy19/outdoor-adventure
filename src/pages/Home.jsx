@@ -1,29 +1,11 @@
 import Button from "../ui/Button";
 import Quote from "../ui/Quote";
 import EventCard from "../ui/EventCard";
+import {homeEventsData,upcomingJourneys} from "../assets/data/data";
 
-const eventsData = [
-  {
-    image: "src\\assets\\hiking-v1.jpg",
-    eventLink: "#",
-    eventName: "Everest Camp Trek",
-    eventDescription:
-      "Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.",
-  },
-  {
-    image: "src\\assets\\walking-v1.jpg",
-    eventLink: "#",
-    eventName: "Walking Holidays",
-    eventDescription:
-      "Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.",
-  },
-];
-const upcomingJourneys = [
-  "src\\assets\\outdoor-image-04.jpg",
-  "src\\assets\\image-1.jpg",
-  "src\\assets\\snow-1.jpg",
-  "src\\assets\\outdoor-image-01.jpg",
-];
+import hbg1 from "../assets/images/hero-bg.jpg";
+import hbg2 from "../assets/images/section-bg-img.jpg";
+// import hbg1 from "../assets/images/hero-bg.jpg";
 
 function Home() {
   return (
@@ -31,10 +13,10 @@ function Home() {
       {/* Hero Section */}
       <section
         className="relative h-[50dvh] md:h-[70dvh] flex items-center justify-center text-center bg-cover bg-center md:bg-fixed p-4"
-        style={{ backgroundImage: "url('src/assets/hero-bg.jpg')" }}
+        style={{ backgroundImage: `url(${hbg1})` }}
       >
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
 
         {/* Hero Content */}
         <div className=" z-1 text-white p-6 max-w-2xl animate-fade-in">
@@ -57,7 +39,7 @@ function Home() {
         </h1>
         <hr className="text-pink-500 border-2 rounded-md w-25" />
         <ul className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
-          {eventsData.map((event) => (
+          {homeEventsData.map((event) => (
             <EventCard event={event} />
           ))}
         </ul>
@@ -65,7 +47,7 @@ function Home() {
 
       <section
         className="relative h-screen flex items-center text-left bg-cover bg-center md:bg-fixed p-4"
-        style={{ backgroundImage: "url('src/assets/section-bg-img.jpg')" }}
+        style={{ backgroundImage: `url(${hbg2})` }}
       >
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black opacity-40 "></div>

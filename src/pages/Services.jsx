@@ -1,47 +1,19 @@
 import EventCard from "../ui/EventCard";
-const eventsData = [
-  {
-    image: "src\\assets\\outdoor-image-03.jpg",
-    eventLink: "#",
-    eventName: "Backpacking Trips",
-    eventDescription:
-      "Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.",
-  },
-  {
-    image: "src\\assets\\services-2.jpg",
-    eventLink: "#",
-    eventName: "Family Hiking Trips",
-    eventDescription:
-      "Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.",
-  },
-  {
-    image: "src\\assets\\services-3.jpg",
-    eventLink: "#",
-    eventName: "Water Sports",
-    eventDescription:
-      "Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.",
-  },
-  {
-    image: "src\\assets\\outdoor-image-01.jpg",
-    eventLink: "#",
-    eventName: "Winter Sports",
-    eventDescription:
-      "Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.",
-  },
-];
+import {eventsData} from "../assets/data/data";
+import servicesBg from '../assets/images/services-bg.jpg';
+
 function Services() {
   return (
     <div className="">
       <section
         className="bg-cover bg-center relative h-[50dvh] lg:h-[70dvh] flex items-center justify-center"
-        style={{ background: "url('src/assets/services-bg.jpg')" }}
+        style={{ background: `url(${servicesBg})`}}
       >
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-1 text-white font-semibold text-5xl tracking-wide">
           Services
         </div>
       </section>
-      {/* 2xl:mx-[12%] */}
       <section className="px-6 py-8 2xl:mx-[12%] flex flex-col gap-10">
         <div className="text-center flex flex-col items-center gap-5">
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-normal">

@@ -4,7 +4,7 @@ import NavigationBar from "./NavigationBar";
 
 function AppLayout() {
   return (
-    <div className="relative bg-gray-50">
+    <div className="relative bg-gray-100">
       <NavigationBar />
       <main>
         <Outlet />

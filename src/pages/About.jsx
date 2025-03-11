@@ -1,10 +1,12 @@
+import aboutbg from "../assets/images/hero-bg.jpg";
+import aboutbg2 from "../assets/images/outdoor-image-02.jpg";
 
 function About() {
   return (
     <div>
       <section
         className="relative h-[50dvh] lg:h-[70dvh] bg-center bg-cover flex items-center justify-center"
-        style={{ backgroundImage: "url('src/assets/hero-bg.jpg')" }}
+        style={{ backgroundImage: `url(${aboutbg})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-1 text-white text-5xl font-bold">
@@ -29,7 +31,7 @@ function About() {
             </p>
           </div>
           <div>
-            <img src="src\assets\outdoor-image-02.jpg" className="w-[100%] aspect-[3/2]"></img>
+            <img src={aboutbg2} className="w-[100%] aspect-[3/2]"></img>
           </div>
         </div>
 
